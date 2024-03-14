@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Location-Based Popularity Recommendations for Zip Code {{ zip_code }}</h1>
+    <ul>
+        {% for movie in location_recommendations %}
+            <li>
+                <strong>Title:</strong> {{ movie.Title }}<br>
+                <strong>Average Rating:</strong> {{ movie['Average Rating'] }}<br>
+                <strong>MovieID:</strong> {{ movie.MovieID }}<br>
+                <strong>Genres:</strong> {{ movie.Genres }}
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Overall Popularity Recommendations</h1>
+    <ul>
+        {% for movie in overall_recommendations %}
+            <li>
+                <strong>Title:</strong> {{ movie.Title }}<br>
+                <strong>Average Rating:</strong> {{ movie['Average Rating'] }}<br>
+                <strong>MovieID:</strong> {{ movie.MovieID }}<br>
+                <strong>Genres:</strong> {{ movie.Genres }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Location-Based Popularity Recommendations for Zip Code {{ zip_code }}</h1>
+    <ul>
+        {% for movie in location_recommendations %}
+            <li>
+                <strong>Title:</strong> {{ movie.Title }}<br>
+                <strong>Average Rating:</strong> {{ movie['Average Rating'] }}<br>
+                <strong>MovieID:</strong> {{ movie.MovieID }}<br>
+                <strong>Genres:</strong> {{ movie.Genres }}
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Overall Popularity Recommendations</h1>
+    <ul>
+        {% for movie in overall_recommendations %}
+            <li>
+                <strong>Title:</strong> {{ movie.Title }}<br>
+                <strong>Average Rating:</strong> {{ movie['Average Rating'] }}<br>
+                <strong>MovieID:</strong> {{ movie.MovieID }}<br>
+                <strong>Genres:</strong> {{ movie.Genres }}
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Personalized Recommendations for User {{ user_id }}</h1>
+    <ul>
+        {% for movie in user_recommendations %}
+            <li>
+                <strong>Title:</strong> {{ movie.Title }}<br>
+                <strong>Recommendation Score:</strong> {{ movie['Recommendation Score'] }}<br>
+                <strong>MovieID:</strong> {{ movie.MovieID }}<br>
+                <strong>Genres:</strong> {{ movie.Genres }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,3074 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='MyMerchantVoucherDashboard' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='interview_test_voucher_Data' inline='true' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='interview_test_voucher_Data' name='textscan.16kvey90jewq6a1ew81dz1x5s2qd'>
+            <connection class='textscan' directory='C:/Users/GDA-User/Documents/Reyki/kerja/2024 Project/My Code/perx/perx_data_engineer_interview/data' filename='interview_test_voucher_Data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16kvey90jewq6a1ew81dz1x5s2qd' name='interview_test_voucher_Data.csv' table='[interview_test_voucher_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='voucher id' ordinal='0' />
+            <column datatype='integer' name='reward id' ordinal='1' />
+            <column datatype='string' name='reward name' ordinal='2' />
+            <column datatype='integer' name='reward price' ordinal='3' />
+            <column datatype='string' name='merchant name' ordinal='4' />
+            <column datatype='string' name='last engagement status' ordinal='5' />
+            <column datatype='string' name='recipient user account id' ordinal='6' />
+            <column datatype='string' name='recipient&apos;s voucher id' ordinal='7' />
+            <column datatype='string' name='reward labels' ordinal='8' />
+            <column datatype='string' name='reward categories' ordinal='9' />
+            <column datatype='string' name='source' ordinal='10' />
+            <column datatype='string' name='stamp id' ordinal='11' />
+            <column datatype='integer' name='game try id' ordinal='12' />
+            <column datatype='string' name='rule builder id' ordinal='13' />
+            <column datatype='string' name='reward type' ordinal='14' />
+            <column datatype='string' name='voucher source' ordinal='15' />
+            <column datatype='integer' name='reward cost amount' ordinal='16' />
+            <column datatype='string' name='redeemed by merchant name' ordinal='17' />
+            <column datatype='integer' name='user_id' ordinal='18' />
+            <column datatype='string' name='user_gender' ordinal='19' />
+            <column datatype='string' name='ethnicity' ordinal='20' />
+            <column datatype='string' name=' loyalty tier' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.16kvey90jewq6a1ew81dz1x5s2qd' name='interview_test_voucher_Data.csv' table='[interview_test_voucher_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='voucher id' ordinal='0' />
+            <column datatype='integer' name='reward id' ordinal='1' />
+            <column datatype='string' name='reward name' ordinal='2' />
+            <column datatype='integer' name='reward price' ordinal='3' />
+            <column datatype='string' name='merchant name' ordinal='4' />
+            <column datatype='string' name='last engagement status' ordinal='5' />
+            <column datatype='string' name='recipient user account id' ordinal='6' />
+            <column datatype='string' name='recipient&apos;s voucher id' ordinal='7' />
+            <column datatype='string' name='reward labels' ordinal='8' />
+            <column datatype='string' name='reward categories' ordinal='9' />
+            <column datatype='string' name='source' ordinal='10' />
+            <column datatype='string' name='stamp id' ordinal='11' />
+            <column datatype='integer' name='game try id' ordinal='12' />
+            <column datatype='string' name='rule builder id' ordinal='13' />
+            <column datatype='string' name='reward type' ordinal='14' />
+            <column datatype='string' name='voucher source' ordinal='15' />
+            <column datatype='integer' name='reward cost amount' ordinal='16' />
+            <column datatype='string' name='redeemed by merchant name' ordinal='17' />
+            <column datatype='integer' name='user_id' ordinal='18' />
+            <column datatype='string' name='user_gender' ordinal='19' />
+            <column datatype='string' name='ethnicity' ordinal='20' />
+            <column datatype='string' name=' loyalty tier' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voucher id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[voucher id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>voucher id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reward id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reward name]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reward price]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[merchant name]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>merchant name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last engagement status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last engagement status]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>last engagement status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recipient user account id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recipient user account id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>recipient user account id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recipient&apos;s voucher id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recipient&apos;s voucher id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>recipient&apos;s voucher id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward labels</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reward labels]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward labels</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reward categories]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward categories</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stamp id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stamp id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>stamp id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game try id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game try id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>game try id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rule builder id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rule builder id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>rule builder id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reward type]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voucher source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[voucher source]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>voucher source</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reward cost amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reward cost amount]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>reward cost amount</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redeemed by merchant name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[redeemed by merchant name]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>redeemed by merchant name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_gender]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>user_gender</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ethnicity]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias>ethnicity</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name> loyalty tier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ loyalty tier]</local-name>
+            <parent-name>[interview_test_voucher_Data.csv]</parent-name>
+            <remote-alias> loyalty tier</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+      <column caption='Count of Each Engagement Status' datatype='integer' name='[Calculation_123849053714182144]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [last engagement status]&#13;&#10;    WHEN &apos;expired&apos; THEN 1&#13;&#10;    WHEN &apos;issued&apos; THEN 2&#13;&#10;    WHEN &apos;redeemed&apos; THEN 3&#13;&#10;    ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='Grouping Engagement Status' datatype='string' name='[Calculation_123849053714305025]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [last engagement status]&#13;&#10;    WHEN &apos;expired&apos; THEN &apos;Expired&apos;&#13;&#10;    WHEN &apos;issued&apos; THEN &apos;Issued&apos;&#13;&#10;    WHEN &apos;redeemed&apos; THEN &apos;Redeemed&apos;&#13;&#10;    ELSE &apos;Other&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Engagement Status Analysis' datatype='integer' name='[Calculation_123849053714374658]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [last engagement status]&#13;&#10;    WHEN &apos;expired&apos; THEN 0&#13;&#10;    WHEN &apos;issued&apos; THEN 1&#13;&#10;    WHEN &apos;redeemed&apos; THEN 2&#13;&#10;    ELSE -1&#13;&#10;END' />
+      </column>
+      <column caption='Total User' datatype='integer' name='[Calculation_123849053716086789]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([user_id])' />
+      </column>
+      <column caption='Outstanding Balance' datatype='integer' name='[Calculation_123849053716930566]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(&#13;&#10;    IF [last engagement status] = &apos;issued&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;redeemed&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;expired&apos; THEN [reward price] ELSE 0 END&#13;&#10;)' />
+      </column>
+      <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='interview_test_voucher_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]' role='measure' type='quantitative' />
+      <column caption='Ethnicity' datatype='string' name='[ethnicity]' role='dimension' type='nominal' />
+      <column caption='Game Try Id' datatype='integer' name='[game try id]' role='measure' type='quantitative' />
+      <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+      <column caption='Merchant Name' datatype='string' name='[merchant name]' role='dimension' type='nominal' />
+      <column caption='Recipient User Account Id' datatype='string' name='[recipient user account id]' role='dimension' type='nominal' />
+      <column caption='Recipient&apos;S Voucher Id' datatype='string' name='[recipient&apos;s voucher id]' role='dimension' type='nominal' />
+      <column caption='Redeemed By Merchant Name' datatype='string' name='[redeemed by merchant name]' role='dimension' type='nominal' />
+      <column caption='Reward Categories' datatype='string' name='[reward categories]' role='dimension' type='nominal' />
+      <column caption='Reward Cost Amount' datatype='integer' name='[reward cost amount]' role='measure' type='quantitative' />
+      <column caption='Reward Id' datatype='integer' name='[reward id]' role='dimension' type='ordinal' />
+      <column caption='Reward Labels' datatype='string' name='[reward labels]' role='dimension' type='nominal' />
+      <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+      <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+      <column caption='Reward Type' datatype='string' name='[reward type]' role='dimension' type='nominal' />
+      <column caption='Rule Builder Id' datatype='string' name='[rule builder id]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <column caption='Stamp Id' datatype='string' name='[stamp id]' role='dimension' type='nominal' />
+      <column caption='User Gender' datatype='string' name='[user_gender]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Voucher Id' datatype='integer' name='[voucher id]' role='dimension' type='ordinal' />
+      <column caption='Voucher Source' datatype='string' name='[voucher source]' role='dimension' type='nominal' />
+      <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+      <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/GDA-User/Documents/My Tableau Repository/Datasources/interview_test_voucher_Data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/10/2024 11:09:29 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='interview_test_voucher_Data' increment-value='%null%' refresh-type='create' rows-inserted='56181' timestamp-start='2024-03-10 23:09:27.806' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>voucher id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[voucher id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>voucher id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50797</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reward id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reward name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reward price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchant name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[merchant name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>merchant name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last engagement status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last engagement status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last engagement status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recipient user account id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recipient user account id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recipient user account id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recipient&apos;s voucher id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recipient&apos;s voucher id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recipient&apos;s voucher id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward labels</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reward labels]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward labels</remote-alias>
+              <ordinal>8</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reward categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward categories</remote-alias>
+              <ordinal>9</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source</remote-alias>
+              <ordinal>10</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stamp id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stamp id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stamp id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game try id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[game try id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game try id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1010</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rule builder id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rule builder id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rule builder id</remote-alias>
+              <ordinal>13</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reward type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward type</remote-alias>
+              <ordinal>14</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>voucher source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[voucher source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>voucher source</remote-alias>
+              <ordinal>15</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reward cost amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reward cost amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reward cost amount</remote-alias>
+              <ordinal>16</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>redeemed by merchant name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[redeemed by merchant name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>redeemed by merchant name</remote-alias>
+              <ordinal>17</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>18</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[user_gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_gender</remote-alias>
+              <ordinal>19</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ethnicity</remote-alias>
+              <ordinal>20</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name> loyalty tier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ loyalty tier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias> loyalty tier</remote-alias>
+              <ordinal>21</ordinal>
+              <family>interview_test_voucher_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none: loyalty tier:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gold(Renewal)test&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Platinum Familytest&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Platinum Family(Renewal)test&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Platinum(Renewal)test&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Greentest&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Platinum Maintest&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Goldtest&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Platinumtest&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:last engagement status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;issued&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;redeemed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;expired&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='interview_test_voucher_Data.csv' id='interview_test_voucher_Data.csv_80DF1C4893BD4475BA1CCC1A6CEF9B1B'>
+            <properties context=''>
+              <relation connection='textscan.16kvey90jewq6a1ew81dz1x5s2qd' name='interview_test_voucher_Data.csv' table='[interview_test_voucher_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='voucher id' ordinal='0' />
+                  <column datatype='integer' name='reward id' ordinal='1' />
+                  <column datatype='string' name='reward name' ordinal='2' />
+                  <column datatype='integer' name='reward price' ordinal='3' />
+                  <column datatype='string' name='merchant name' ordinal='4' />
+                  <column datatype='string' name='last engagement status' ordinal='5' />
+                  <column datatype='string' name='recipient user account id' ordinal='6' />
+                  <column datatype='string' name='recipient&apos;s voucher id' ordinal='7' />
+                  <column datatype='string' name='reward labels' ordinal='8' />
+                  <column datatype='string' name='reward categories' ordinal='9' />
+                  <column datatype='string' name='source' ordinal='10' />
+                  <column datatype='string' name='stamp id' ordinal='11' />
+                  <column datatype='integer' name='game try id' ordinal='12' />
+                  <column datatype='string' name='rule builder id' ordinal='13' />
+                  <column datatype='string' name='reward type' ordinal='14' />
+                  <column datatype='string' name='voucher source' ordinal='15' />
+                  <column datatype='integer' name='reward cost amount' ordinal='16' />
+                  <column datatype='string' name='redeemed by merchant name' ordinal='17' />
+                  <column datatype='integer' name='user_id' ordinal='18' />
+                  <column datatype='string' name='user_gender' ordinal='19' />
+                  <column datatype='string' name='ethnicity' ordinal='20' />
+                  <column datatype='string' name=' loyalty tier' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+      <datasources>
+        <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+        <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+        <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+        </column>
+        <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+        <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+        <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]'>
+        <groupfilter function='level-members' level='[none: loyalty tier:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_123849053738807303:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]'>
+        <groupfilter function='level-members' level='[none:reward name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Issued Distribution by member'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='member' level='[none:last engagement status:nk]' member='&quot;issued&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+              <size column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FB27B518-910A-4ACC-8CF0-7E461C4C00A6}' />
+    </worksheet>
+    <worksheet name='Outstanding Balance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Outstanding Balance' datatype='integer' name='[Calculation_123849053716930566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(&#13;&#10;    IF [last engagement status] = &apos;issued&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;redeemed&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;expired&apos; THEN [reward price] ELSE 0 END&#13;&#10;)' />
+            </column>
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_123849053716930566]' derivation='User' name='[usr:Calculation_123849053716930566:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{58FB7252-8DA8-4806-8FBE-BA0BA83D4CA9}' />
+    </worksheet>
+    <worksheet name='Outstanding Balance by Member'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Outstanding Balance' datatype='integer' name='[Calculation_123849053716930566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(&#13;&#10;    IF [last engagement status] = &apos;issued&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;redeemed&apos; THEN [reward price] ELSE 0 END&#13;&#10;) -&#13;&#10;SUM(&#13;&#10;    IF [last engagement status] = &apos;expired&apos; THEN [reward price] ELSE 0 END&#13;&#10;)' />
+            </column>
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_123849053716930566]' derivation='User' name='[usr:Calculation_123849053716930566:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' value='140' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+              <size column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' />
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[usr:Calculation_123849053716930566:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0A76663B-6232-47D1-A339-2AB6305107AE}' />
+    </worksheet>
+    <worksheet name='Point Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:last engagement status:nk]' />
+              <groupfilter function='member' level='[none:last engagement status:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]' />
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]</rows>
+        <cols>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</cols>
+      </table>
+      <simple-id uuid='{D9E0D09D-20CA-42B7-A558-0B25019A3509}' />
+    </worksheet>
+    <worksheet name='Redeemed Distribution by member '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='member' level='[none:last engagement status:nk]' member='&quot;redeemed&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+              <size column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ADE3CEE9-D8D9-4119-A8B0-04A0C6AE38EE}' />
+    </worksheet>
+    <worksheet name='Source'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]</rows>
+        <cols>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</cols>
+      </table>
+      <simple-id uuid='{80E9DE24-B172-4EEE-895B-F3B7C6F096E5}' />
+    </worksheet>
+    <worksheet name='Total Expired'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='member' level='[none:last engagement status:nk]' member='&quot;expired&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC84F31A-D210-47AD-B68C-535BE5D125CF}' />
+    </worksheet>
+    <worksheet name='Total Issued'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='member' level='[none:last engagement status:nk]' member='&quot;issued&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DDAEF254-C35F-4741-ABFD-AEF6FF6C8D15}' />
+    </worksheet>
+    <worksheet name='Total Members'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[cnt:user_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{885D4ABE-CB76-4B91-8042-04DB037EAA58}' />
+    </worksheet>
+    <worksheet name='Total Redeemed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column caption='Last Engagement Status' datatype='string' name='[last engagement status]' role='dimension' type='nominal' />
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last engagement status]' derivation='None' name='[none:last engagement status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Reward Price' datatype='integer' name='[reward price]' role='measure' type='quantitative' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward price]' derivation='Sum' name='[sum:reward price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]'>
+            <groupfilter function='member' level='[none:last engagement status:nk]' member='&quot;redeemed&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' scope='rows' value='center' />
+            <format attr='vertical-align' data-class='total' scope='rows' value='center' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='background-color' scope='cols' value='#e9edf5' />
+            <format attr='band-color' scope='rows' value='#f7f1f6' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#f9f8f7' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1BEF6BCB-1BDB-4B74-9163-A355F3869CF1}' />
+    </worksheet>
+    <worksheet name='Total Reward Cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+            <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+            <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+            </column>
+            <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+            <column caption='Reward Cost Amount' datatype='integer' name='[reward cost amount]' role='measure' type='quantitative' />
+            <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+            <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+            <column-instance column='[reward cost amount]' derivation='Sum' name='[sum:reward cost amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</column>
+            <column>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='59' />
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='vertical-align' data-class='total' scope='rows' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[sum:reward cost amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B0B29FF6-5A99-4814-8EDA-655840FACD34}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='MyMerchant114 Executive Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00aaff' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+          <format attr='background-color' value='#ddebf0' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_35' value='right' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1500' minheight='800' minwidth='1500' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='interview_test_voucher_Data' name='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1yg2o8n1db9s2s1cqj67u1pt8lr6'>
+        <column caption='Loyalty Tier' datatype='string' name='[ loyalty tier]' role='dimension' type='nominal' />
+        <column caption='Voucher Sources' datatype='string' name='[Calculation_123849053738807303]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF ISNULL([source]) THEN &apos;Others&apos; ELSE [source] END' />
+        </column>
+        <column-instance column='[ loyalty tier]' derivation='None' name='[none: loyalty tier:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_123849053738807303]' derivation='None' name='[none:Calculation_123849053738807303:nk]' pivot='key' type='nominal' />
+        <column-instance column='[reward name]' derivation='None' name='[none:reward name:nk]' pivot='key' type='nominal' />
+        <column caption='Reward Name' datatype='string' name='[reward name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94514' id='27' param='horz' type-v2='layout-flow' w='98934' x='533' y='1000'>
+            <zone h='94514' id='24' param='horz' type-v2='layout-flow' w='98934' x='533' y='1000'>
+              <zone h='94514' id='17' param='horz' type-v2='layout-flow' w='98934' x='533' y='1000'>
+                <zone h='94514' id='15' type-v2='layout-basic' w='98934' x='533' y='1000'>
+                  <zone h='6503' id='5' param='vert' type-v2='layout-flow' w='98934' x='533' y='1000'>
+                    <zone h='5125' id='7' type-v2='title' w='98934' x='533' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='69139' id='14' name='Point Distribution' w='49466' x='533' y='26375'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9500' id='18' param='horz' type-v2='layout-flow' w='98934' x='533' y='16875'>
+                    <zone h='9500' id='11' name='Total Redeemed' w='16489' x='533' y='16875'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9500' id='10' name='Total Issued' w='16489' x='17022' y='16875'>
+                      <layout-cache cell-count-w='1' fixed-size-h='119' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9500' id='21' name='Total Expired' w='16489' x='33511' y='16875'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9500' id='12' name='Outstanding Balance' w='16489' x='50000' y='16875'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9500' id='8' name='Total Reward Cost' w='16489' x='66489' y='16875'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='9500' id='9' name='Total Members' w='16489' x='82978' y='16875'>
+                      <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='69139' id='25' name='Outstanding Balance by Member' w='49468' x='49999' y='26375'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9372' id='30' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' show-apply='true' type-v2='filter' values='relevant' w='7334' x='533' y='7503'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='9372' id='32' type-v2='text' w='10733' x='22800' y='7503'>
+                    <formatted-text>
+                      <run fontcolor='#000000' fontsize='14'>About the data:</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='9372' id='33' type-v2='text' w='50534' x='33533' y='7503'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000'>- Merchant Name:</run>
+                      <run fontcolor='#000000'> All transactions in the dataset were conducted exclusively with &quot;</run>
+                      <run bold='true' fontcolor='#000000'>MyMerchant114</run>
+                      <run fontcolor='#000000'>.&quot;</run>
+                      <run>Æ&#10;</run>
+                      <run bold='true' fontcolor='#000000'>- User Gender Distribution:</run>
+                      <run fontcolor='#000000'> The dataset comprises transactions associated solely with users identified as </run>
+                      <run bold='true' fontcolor='#000000'>female</run>
+                      <run fontcolor='#000000'>.</run>
+                      <run>Æ&#10;</run>
+                      <run bold='true' fontcolor='#000000'>- Ethnicity Distribution:</run>
+                      <run fontcolor='#000000'> All users in the dataset are categorized as </run>
+                      <run bold='true' fontcolor='#000000'>Indian ethnicity</run>
+                      <run fontcolor='#000000'>.</run>
+                      <run>Æ&#10;</run>
+                      <run bold='true' fontcolor='#000000'>- Reward Category</run>
+                      <run fontcolor='#000000'>: The reward category for all transactions is &quot;</run>
+                      <run bold='true' fontcolor='#000000'>FnB</run>
+                      <run fontcolor='#000000'>&quot; (Food and Beverage).</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9372' id='34' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]' show-apply='true' type-v2='filter' values='relevant' w='7466' x='7867' y='7503'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='9372' id='35' type-v2='text' w='15400' x='84067' y='7503'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='14'>About Creator:</run>
+                      <run fontalignment='1'>Æ&#10;</run>
+                      <run bold='true' fontalignment='1' fontcolor='#000000'>Æ </run>
+                      <run auto-url='true' bold='true' fontalignment='1' fontcolor='#000000' hyperlink='tabdoc:load-url url=&amp;quot;https://www.linkedin.com/in/reyki-seprianza/&amp;quot;'>https://www.linkedin.com/in/reyki-seprianza/</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9372' id='36' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]' show-apply='true' type-v2='filter' values='database' w='7467' x='15333' y='7503'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='3486' id='29' param='horz' type-v2='layout-flow' w='98934' x='533' y='95514'>
+            <zone h='3486' id='28' leg-item-layout='horz' leg-item-order='normal' name='Outstanding Balance by Member' pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' type-v2='color' w='98934' x='533' y='95514'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='41' param='vert' type-v2='layout-flow' w='98934' x='533' y='1000'>
+                <zone h='5125' id='7' type-v2='title' w='98934' x='533' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9372' id='32' type-v2='text' w='10733' x='22800' y='7503'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='14'>About the data:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9372' id='33' type-v2='text' w='50534' x='33533' y='7503'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000'>- Merchant Name:</run>
+                    <run fontcolor='#000000'> All transactions in the dataset were conducted exclusively with &quot;</run>
+                    <run bold='true' fontcolor='#000000'>MyMerchant114</run>
+                    <run fontcolor='#000000'>.&quot;</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- User Gender Distribution:</run>
+                    <run fontcolor='#000000'> The dataset comprises transactions associated solely with users identified as </run>
+                    <run bold='true' fontcolor='#000000'>female</run>
+                    <run fontcolor='#000000'>.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- Ethnicity Distribution:</run>
+                    <run fontcolor='#000000'> All users in the dataset are categorized as </run>
+                    <run bold='true' fontcolor='#000000'>Indian ethnicity</run>
+                    <run fontcolor='#000000'>.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- Reward Category</run>
+                    <run fontcolor='#000000'>: The reward category for all transactions is &quot;</run>
+                    <run bold='true' fontcolor='#000000'>FnB</run>
+                    <run fontcolor='#000000'>&quot; (Food and Beverage).</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9372' id='35' type-v2='text' w='15400' x='84067' y='7503'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='14'>About Creator:</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#000000'>Æ </run>
+                    <run auto-url='true' bold='true' fontalignment='1' fontcolor='#000000' hyperlink='tabdoc:load-url url=&amp;quot;https://www.linkedin.com/in/reyki-seprianza/&amp;quot;'>https://www.linkedin.com/in/reyki-seprianza/</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='11' is-fixed='true' name='Total Redeemed' w='16489' x='533' y='16875'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='10' is-fixed='true' name='Total Issued' w='16489' x='17022' y='16875'>
+                  <layout-cache cell-count-w='1' fixed-size-h='119' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='21' is-fixed='true' name='Total Expired' w='16489' x='33511' y='16875'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='12' is-fixed='true' name='Outstanding Balance' w='16489' x='50000' y='16875'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='8' is-fixed='true' name='Total Reward Cost' w='16489' x='66489' y='16875'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9500' id='9' is-fixed='true' name='Total Members' w='16489' x='82978' y='16875'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69139' id='14' is-fixed='true' name='Point Distribution' w='49466' x='533' y='26375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9372' id='30' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' show-apply='true' type-v2='filter' values='relevant' w='7334' x='533' y='7503'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9372' id='34' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]' show-apply='true' type-v2='filter' values='relevant' w='7466' x='7867' y='7503'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9372' id='36' mode='checkdropdown' name='Outstanding Balance by Member' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]' show-apply='true' type-v2='filter' values='database' w='7467' x='15333' y='7503'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69139' id='25' is-fixed='true' name='Outstanding Balance by Member' w='49468' x='49999' y='26375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3486' id='28' leg-item-layout='horz' leg-item-order='normal' name='Outstanding Balance by Member' pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' type-v2='color' w='98934' x='533' y='95514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{03635A27-AEAB-40F8-84CF-D15AF2F3F434}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='MyMerchant114 Executive Dashboard'>
+      <viewpoints>
+        <viewpoint name='Outstanding Balance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Outstanding Balance by Member'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Point Distribution'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Expired'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Issued'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Members'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Redeemed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Reward Cost'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8D68BD4D-6AA7-4B90-BB4A-0AD3801734AE}' />
+    </window>
+    <window class='worksheet' name='Outstanding Balance by Member'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' show-apply='true' type='filter' />
+            <card pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:ethnicity:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:redeemed by merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward labels:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A454C5A0-1B5F-4B3A-B702-DFA0A267EB31}' />
+    </window>
+    <window class='worksheet' name='Issued Distribution by member'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:ethnicity:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:redeemed by merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward labels:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70D71433-6DB6-4873-BC4E-543F364AA002}' />
+    </window>
+    <window class='worksheet' name='Redeemed Distribution by member '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none: loyalty tier:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:ethnicity:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:redeemed by merchant name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward labels:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward name:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:reward type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41094BFA-6DE3-44B7-B267-FC02ACF08A86}' />
+    </window>
+    <window class='worksheet' name='Source'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:Calculation_123849053738807303:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:source:nk]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:voucher source:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1654E112-D3F8-427C-9328-0444CA7D9D96}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Outstanding Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3FCAE41D-2E2F-4A2A-8D5D-20D1757CC795}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Point Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ADD8D35F-DD34-4CE2-BFF5-2598727C6F92}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Expired'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F4A25491-A15D-408A-8B90-20ABA9525FF5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Issued'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57AC9E11-3D4A-40F1-854C-BFDB0DDECB72}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Members'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[ctd:user_id:ok]</field>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D4C2B3E-51AD-4F09-817B-DFF3E5D748BC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Redeemed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yg2o8n1db9s2s1cqj67u1pt8lr6].[none:last engagement status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{06DCE896-2D51-4771-A72E-09642C4BF215}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Reward Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD168DA1-7523-4D8C-A799-7079FA412D75}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='288' name='Issued Distribution by member' width='288'>
+      iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAYAAAAUg66AAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFOUlEQVR4nO3by2qdVRiA4W/vJDSJhxRFPFXqWNCJaPEAelfiRXkBIuhMdKyomFIsKLbF
+      1paKabJ3sp1KFQ+TvmKfZ7gG//+tyQvrPyw2m81mAALLegDg4SVAQEaAgMz2/Qubk5NZXbte
+      zAI8ZP4QoNWPP861994vZgEeMo5gQEaAgIwAAZm/DtDOzuxdujS7r7w8y/Pn/9EFF3t7s/Xk
+      E39+s/PnZ/noo/96SOD/6Q8PoX9v6+Bgzm7/PJvVahZby3nk3Xfm9KefZufixdmsVnNyeHn2
+      335rfv3s89l59pnZfvrpOT68PPuvvTp3P/xo9t98Y06+PZzlweOz3N2ds6Oj2blwYe588MFs
+      ju49qD0C/1F/GaDNej2L/f1ZfXs4288/N+ubN+fkypXZu/T6rL67Onuvvzant2/P1mOPzcmV
+      K3N8eHnm7Gx++fiTWZw7N3N2NrOzPWd3787m+HjW167P8dffiA8wM38ToLM7d+b01q3ZefHi
+      rL7/YRbL5WyO7s2vn342m+N7c/rFl7P91FOzvnFjNkdHM5vNbE5PZ3lwMOsbN+beV1/N6a2f
+      Z7G1NYvd3Vlfvz47L1yY9c2bM+v1g9oj8B+1uP9n1JOrV30HBDwQ3oIBGQECMgIEZAQIyAgQ
+      kBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAg
+      I0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBG
+      gICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwA
+      ARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQEC
+      MgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRk
+      BAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgI
+      EJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEg
+      ICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BA
+      RoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICM
+      AAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkB
+      AjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIE
+      ZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjI
+      CBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJAR
+      ICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNA
+      QEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCA
+      jAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAAZnt+xcWu7tz7qWXilmAh8xvvLOaZwPYJbYA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='288' name='MyMerchant114 Executive Dashboard' width='288'>
+      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
+    </thumbnail>
+    <thumbnail height='288' name='Outstanding Balance by Member' width='288'>
+      iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAYAAAAUg66AAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAHPUlEQVR4nO3c249VZx3H4d/ah9kzUwYmEFoptGA0WiaRXgglnrCmGv2PjH9UL6xXxght
+      TUy90qRYEAiFVlNOA8McmNnH5QWYttSMejNfIs9ztfdaK2u/780neddhN23btgUQ0EkPAHh+
+      CRAQI0BATO/pDe1oVONbtxNjAZ4zXwnQ+LPP6tYvf5UYC/CcsQQDYgQIiBEgIGb3APX7tXD2
+      bM2f+k51lpf/qxM2CwvVPXTw3//Y8nJ19u37nwcJ/H/6ykXoL+oeOFCztQfVjsfVdDv1wps/
+      rum9e9U/frza8bhGV6/V4g9/UI8++FP1j3ytei+9VMOr12rxzHdr47e/q8Xvf69GV65W58D+
+      6szP12x7u/rHjtXDt9+udntnr+YIPKN2DVA7mVSzuFjjK1erd/Tlmqyu1uj69Vo4+0aNb9ys
+      hTfO1HRtrbpLSzW6fr2GV69VzWa1ef5CNYNB1WxW1e/VbGOj2uGwJrdu1/DSZfEBquo/BGj2
+      8GFN79+v/onjNf77P6rpdKrd3qlHf/yg2uFOTT+8WL3Dh2ty506129tVbVvtdFqdAwdqcudO
+      7Xz0UU3vP6im261mfr4mt29X/5VjNVldrZpM9mqOwDOqefpl1NHNm54DAvaEu2BAzK5LsOp0
+      auH06apqa7r2sBZeP1WTu3dr6933qun364VzP6rRxx/XdHOrFs+crs3zF2rpZz+tZjCorff/
+      8HjJdexYDb79rdq88G7Nr6xU98XDtfXe+zV/8rUa3bxZs43NvZkp8MzZPUDdbg0vX665b36j
+      xjdu1PiTT6p/9OWqqup//UQN/3al+sdfrebhw9r8/fkanDxZ6+/8pgYrKzXb2qzqdquzf39t
+      f3ix5k6cqNGnn1bv0aPqLi9XNZ1q5gZVJUDwvNp9CTadVvfgwZrcul3taFT9V1+pyd17j3et
+      3q/5109VTWc1vf+gln7x8+q9eLiawaDa8bhmm1vVdLvVDoc129ioZmG+OosLVU3VdHW1phvr
+      ezE/4Bm2+3NAhw7Vvp+8WZNbt2prfb2a/lzN1terd+RINf1eVdOpztK+avr9aqfT2rn41+od
+      Plyz9fWqTqf6x45Wd/lADVZO1s6f/1L73nqrpg/Wqt0Z1r5z52q6uVnrv36najrdq/kCz5Dd
+      74I1TTVzc1X1+G86qmmqZrManHythpcuVzM3V+10WtW21fR71Q6fHNO21Vlaqqbfr+naWjW9
+      3uOHGf91rvG4mn7/8efhcA+nCzxLdr8G1LZfDsSTVg0vXX78dTT6fNdw9KVjZhsbn+97ctwX
+      zyU8gNvwQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQI
+      EBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQ
+      I0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNA
+      QIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECM
+      AAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAAB
+      MQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATEC
+      BMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTE
+      CBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQ
+      ECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAj
+      QECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BA
+      jAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwA
+      ATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAEx
+      AgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIE
+      xAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQI
+      EBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQ
+      I0BAjAABMQIExAgQECNAQIwAATECBMQIEBAjQECMAAExAgTECBAQI0BAjAABMQIExAgQECNA
+      QIwAATG9pzc08/M1WFlJjAV4zvwTJmtriM4pcpYAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='288' name='Redeemed Distribution by member ' width='288'>
+      iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAYAAAAUg66AAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFOUlEQVR4nO3by2qdVRiA4W/vJDSJhxRFPFXqWNCJaPEAelfiRXkBIuhMdKyomFIsKLbF
+      1paKabJ3sp1KFQ+TvmKfZ7gG//+tyQvrPyw2m81mAALLegDg4SVAQEaAgMz2/Qubk5NZXbte
+      zAI8ZP4QoNWPP861994vZgEeMo5gQEaAgIwAAZm/DtDOzuxdujS7r7w8y/Pn/9EFF3t7s/Xk
+      E39+s/PnZ/noo/96SOD/6Q8PoX9v6+Bgzm7/PJvVahZby3nk3Xfm9KefZufixdmsVnNyeHn2
+      335rfv3s89l59pnZfvrpOT68PPuvvTp3P/xo9t98Y06+PZzlweOz3N2ds6Oj2blwYe588MFs
+      ju49qD0C/1F/GaDNej2L/f1ZfXs4288/N+ubN+fkypXZu/T6rL67Onuvvzant2/P1mOPzcmV
+      K3N8eHnm7Gx++fiTWZw7N3N2NrOzPWd3787m+HjW167P8dffiA8wM38ToLM7d+b01q3ZefHi
+      rL7/YRbL5WyO7s2vn342m+N7c/rFl7P91FOzvnFjNkdHM5vNbE5PZ3lwMOsbN+beV1/N6a2f
+      Z7G1NYvd3Vlfvz47L1yY9c2bM+v1g9oj8B+1uP9n1JOrV30HBDwQ3oIBGQECMgIEZAQIyAgQ
+      kBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAg
+      I0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBG
+      gICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwA
+      ARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQEC
+      MgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRk
+      BAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgI
+      EJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEg
+      ICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BA
+      RoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICM
+      AAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkB
+      AjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIE
+      ZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjI
+      CBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAARkBAjICBGQECMgIEJAR
+      ICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCAjAABGQECMgIEZAQIyAgQkBEgICNA
+      QEaAgIwAARkBAjICBGQECMgIEJARICAjQEBGgICMAAEZAQIyAgRkBAjICBCQESAgI0BARoCA
+      jAABGQECMgIEZAQIyAgQkBEgICNAQEaAgIwAAZnt+xcWu7tz7qWXilmAh8xvvLOaZwPYJbYA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='288' name='Source' width='288'>
+      iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAYAAAAUg66AAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAatUlEQVR4nO3deXCU54Hn8e97dLe6W7eELiR0IA5xH8aBhGBvbBzbsbFjJzue9VYqnhxb
+      SSo1NWQz2Uw2h2tSNbPrVE2qxrWTxNlduzb4SuKD2MZXfICxDeY2l5EESAKhq3VLrT7e990/
+      BBpkk8RTS3iUze9TRVHVop/3eRH91fO8b0tYQRAEiIhcYZZlWbbpSYjIny8FSESMUYBExBgF
+      SESMUYBExBgFSESMUYBExBgFSESMUYBExBgFSESMUYBExBgFSESMUYDk0vxO/veX7+Fnj705
+      7eEdj/+ErQfOMHhZDhIAZ3jp5//Aj96GkdTlGDNNsr+Z+//LF/iPn97EHZ/7On/7z0/Sn8zi
+      X47h5bJyTU9AZigrn/LiBHv6Opn8cQkBFh5dvZ0ULc0hetkO5DExOsxImssSiGzPCc4cepNk
+      zQY+9bFZ5GUH6BuBgVSaaNS9jPOWy0EBkkuzcrl24yre3NFFO1DBBBGO0tuVz6rZpURMz+93
+      GO5sofnoPurXfo/PXF1lejryByhA8jtFll5N48532d/tsyGexO7Yw2BuLYUxj/TwWZ57/AlO
+      dw8z6IcorVvBpjs+ScFoG6d+8/cMfuInXNsQpvvAszQfP0jpxm8xN9LL688+xYm2PnomLPLm
+      r+cbd9XhZcbpPfoCv9hzgP6hISpX3sEnblhF+eAxTh87xDNvNzORdaha/SmuWtbAisgufv3L
+      LmbdOo/One/xXnQt376lkUjIIVZSQWXVbJ7a/QYhbzGrGyrJjcfJj0cIUgneePwhDnWNkRiH
+      svlXsWL9BtbGz9DXvJtdkY3curICTr/Ka83D1Cy/nrnRDu77zuvUbqzGPrmfkfk3cs/GBbzz
+      4pPsOniaRDZCXlkdn/nMRnISx3niN6/SO+rhFi5gybrVXFfn0/Xu6zzyRidZy6Fy5SdZvmwx
+      H6mNmf70zggKkPxOTtlaFtS8wa/2Jlm6aISR3dtJ1/4NRe4IJ/e8yIuJBq6/cS1fqz/GY/c/
+      wf1vbOBLdaMMdxwiMT65oUqN9NDf2UJOeoxzLa+z5QBc/Ym7+O415fQNpYAxwCXjzObmz61i
+      Tuw0P/qHl3l+zhIWH9jOwfcy3PX971CdPsG9X3+Esf7rWHxtHx0n9vObf9rLLXf/Nf91TT3O
+      +Tnn1FzN4oJq9t33dzx87/082LCJ6z51A1+6cRmpI9v4uxdtNn/9br6+upAtP/7vfON+m9c2
+      zyI1eJae6PmLUMkEib4EJSkPQmOcPPI2R4bzuOlb/8it1SlIvMiT206Se8fX+PZHQ2SSIwwd
+      e4l9J07SdOtX+VxDDof+5Ws8+8YYjeMxXntoB9f84//io2UZ2s4MYLueiU/njKQAye9RSOPi
+      Jo48tp32gggdrwyxdHMdVqqN7k6PddcuY0lTCW7OWlav3s//eOcQd5eHLj1U+gyJ7nHW/7v1
+      XL2uDjtkU1ocB8ZwQiHK5y6gMJ7BcguJhj285AQd51p462gvnf/t78khy1hJnOrCGFYAbiSf
+      T/ynv2ZDVd5UfCZZhHIr+ctv/pjbx4c48vLD7HjjCd5aWobbeorVt3+JprpicFyWNC2k9sk9
+      dGy+6Q9sKaMs3XgnmxqjhCaGGD/0DvaKm/jiR4sJhS3cUJz2ntO07NvJe4fHeSVukx3LZ6I6
+      j6KKKpquLuW3jz7AkVlFzF2wijm1BQSAdXk+SX/SFCD5PWwKqudQuv9tOj9azv6jC/mLiihW
+      4OH74IYcXMcGK4TrOmSyWYJg8p9UQEAQBAR+wOQP/fXx/YBQOETInUyGPXUP1sJxQ9h2Fiwb
+      y5p8vmdXUd60hv/8vb+gxAaCACwLzrRg20XUNxYRZ/oLefJ4ATl5RUTzivj49Wvo736L5u4k
+      s8Y93OIIrm0DFq7jYGf+9e5YAJNzDgKCaVfEy5lVXko0ZOFPQJDNghsiJzR5ApZlE/g+kVlz
+      +cI932FZVQTrwnSDLCU1TdgvPcah/dv5l30J1t1wM5tvqleAUIDkD3BKF3Lnwh+x8416mj/7
+      OebnRSBnIQuuSvDKE7/m3K5SqgsGaD81xjc+ezUV+e2EZtfzwouPE7QWMt5ygu5umB2eS/3S
+      IZ5/5CnOHpzFvKpc/OK5/PvrSi994HAuV68sJLtjF7/4nx4VxTm4fpjS+YtZX/y755s4sYv3
+      9m3nuD+HvHCIZOe7nE2VcsvcMqrKNrLzx//Ec511vFuSQ1tbDzWbP0N9xCGRm8fJ157l//RV
+      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
+      ApyJXs7mNFKVMzpt+CAI8H1/2mO+72NZ1hU6QRGBmRqg9AgjiW7OdA8TCudSmElj+x5QRFVN
+      gjNtbYz4GbxUkubC+cxfuZDJdISZvyJC29k04+MZxlrOMfv6dRR4704b/lIBCoJg6peIXBkz
+      M0B5s6nKm0153ShjiQ6e++0xuksjVJdU0riqhEbAS4+QTJxh+/5ztI8spPb8U0PFFUTOJRhL
+      JxgccWhY4BLvn76ysW0b+317uGw2i2VZOI5zZc5RRGbeNaCJ0UFOd3TSPZLGCsWIFRQRPnea
+      weEhOPUGe463MZz2AB+LFH7gEApfNEC0jpoClyN7XmV/MpfGsE1sxp2liMBMXAH5Gc61HGAw
+      ZU9uq4I0qeomiouKIDJKsq2ZN08fgyCLn82QW7GMOXHITg3gEiuM0t88ij3fxbFAV3ZEZiYr
+      mGEXPQI/y9jIEKlUlrQXYNkO8YIiomEH1/KZGBthZGwCL7CxnDCFRQVEXItMMonn+4TicRw/
+      w2BiDCcWJTcWwfcmGBiForwwjnPp5ZC2YCJXlmVZ1owLkCkKkMiVZVmWpasjImKMAiQixihA
+      ImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihA
+      ImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihA
+      ImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihA
+      ImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihA
+      ImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihAImKMAiQixihA
+      ImKMAiQixrimJ/ABQUA2m8bzfDw/wLJs3HAExwbbsvC9LNl0Bg8LLIdIJIRtgZ9N43keuBEc
+      28a2LoyXJZP2yFguOSEb27J+7+FF5MqZcQEK0sMcePtN2ntHyXg+BFm8gpWsXlnDggqb1t1v
+      sKu1H8cO8LMBi669lWVz8jn3zkscOXiI5Nq/ZOm8WubGJ0OTPfsCW19uZ6e3jm9/polZBRHD
+      ZygiF8y8APkWBXMWs7SphLmzInjDJ/n5T46SmJMHRWnOdmeo+PitrM1LMNL6FntOdzO3Oh8o
+      prCwhP6JCfoHMjTEw1gEjLR2YBUVUtin/abITDPjXpN2NJ959XOYVxbDnxhlMDFCwdxKCnIj
+      0PoWyarFfKI2l3hxNWXLb6aMbo6NTD43UlRKrKebZPtpsgHg9fHq4VLKSwqMnpOIXNqMWwEB
+      MN5LX6KfU2d6SQ4Nkjd/DUX5uXh940Ri0fPVdLCsCG7IY2D0/PPcGJWM4WUHyfgBzlgPvfmN
+      1OcMThve93183//AYxf/LiJ/fDNuBTTJwrIsnFAO8aJcvL5hUhPp3/OnLwgxd3kR4RyP5Hia
+      vuZe6q5bRGFp7pWYtIj8G83MFVCslJJYKYXl4yQHz9H+wmH6KldQH42RGk3iAxYeQTBBNuOQ
+      e1Ff3MJKomd6GEl3kxhzaSh2iCWm3/mybRvbnt7ebDY7GT3HuQInKCIwA1dAyeF+Wk610zmU
+      wnJzyIlFSHWcY2g8BY3riHYe4ZXTo4z1d9Bz8Dm6Kacp76IBcmqoKXI4/OarHErmUheyic64
+      sxQRmIErIBuP7uZ36B7KkvYCLMuCppVUlJVCOMLsihZ27djKVsciwGbpx8uJ2zA8NYJDtCjO
+      QGuKyGIH2754iyYiM4kVBEFgehIXCwIfL5vB8wL8gPPXgkI4tjX5RkQ/SzadxccC2yEccs+/
+      ETFLANiuixX4pNNZLMfBdRwIPNJZCIfsyaBdgrZgIleWZVnWjAuQKQqQyJVlWZalqyMiYowC
+      JCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowC
+      JCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowC
+      JCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowC
+      JCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowC
+      JCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYowCJCLGKEAiYsz/BTM+KTrqS9ppAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
